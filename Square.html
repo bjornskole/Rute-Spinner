@@ -20,7 +20,15 @@
 
       @media (prefers-reduced-motion: no-preference) {
         #Spin-Animation {
-          animation: Spin-Animation-spin infinite 20s linear;
+          animation: Spin-Animation-spin infinite 5s linear;
+        }
+      }
+      @keyframes Spin-Animation-spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
         }
       }
 
@@ -96,14 +104,6 @@
         margin: 10px;
         background-color: yellow;
         grid-area: s9;
-      }
-      @keyframes Spin-Animation-spin {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(360deg);
-        }
       }
     </style>
   </head>
