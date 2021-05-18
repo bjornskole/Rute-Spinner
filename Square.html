@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+
+      #Spin-Animation {
+        pointer-events: none;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        border-radius: 50px;
+      }
+
+      @media (prefers-reduced-motion: no-preference) {
+        #Spin-Animation {
+          animation: Spin-Animation-spin infinite 20s linear;
+        }
+      }
+
+      div.page {
+        background-color: red;
+        height: 100vh;
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
+        grid-template-areas:
+          "s1 s2 s3"
+          "s4 s5 s6"
+          "s7 s8 s9";
+      }
+
+      div.s1 {
+        /* margin: 30%; */
+        border: black solid 1px;
+        margin: 10px;
+        background-color: yellow;
+        grid-area: s1;
+      }
+
+      div.s2 {
+        border: black solid 1px;
+        margin: 10px;
+        background-color: yellow;
+        grid-area: s2;
+      }
+
+      div.s3 {
+        border: black solid 1px;
+        margin: 10px;
+        background-color: yellow;
+        grid-area: s3;
+      }
+
+      div.s4 {
+        border: black solid 1px;
+        margin: 10px;
+        background-color: yellow;
+        grid-area: s4;
+      }
+      div.s5 {
+        border: black solid 1px;
+        margin: 10px;
+        background-color: yellow;
+        grid-area: s5;
+      }
+      div.s6 {
+        border: black solid 1px;
+        margin: 10px;
+        background-color: yellow;
+        grid-area: s6;
+      }
+
+      div.s7 {
+        border: black solid 1px;
+        margin: 10px;
+        background-color: yellow;
+        grid-area: s7;
+      }
+      div.s8 {
+        border: black solid 1px;
+        margin: 10px;
+        background-color: yellow;
+        grid-area: s8;
+      }
+      div.s9 {
+        border: black solid 1px;
+        margin: 10px;
+        background-color: yellow;
+        grid-area: s9;
+      }
+      @keyframes Spin-Animation-spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="s1"></div>
+      <div class="s2"></div>
+      <div class="s3"></div>
+
+      <div class="s4"></div>
+      <img
+        id="Spin-Animation"
+        class="s5"
+        src="depositphotos_69030447-stock-illustration-black-and-white-radial-lines.jpg"
+      />
+      <div class="s6"></div>
+
+      <div class="s7"></div>
+      <div class="s8"></div>
+      <div class="s9"></div>
+    </div>
+  </body>
+</html>
